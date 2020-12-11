@@ -1,0 +1,14 @@
+.top {
+    width: $page_width;
+    background-color: $back;
+    .top_main {
+        width: $box_width;
+        height: $box_height;
+        margin: 0 auto;
+        line-height: 29px;
+        border: 1px red solid;
+        .top_main_right_login {
+            font-size: $font12;
+        }
+    }
+}
