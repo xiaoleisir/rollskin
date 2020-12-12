@@ -1,0 +1,21 @@
+.banner {
+    width: 1200px;
+    height: 380px;
+    margin: 0 auto;
+    border: 1px solid red;
+}
+
+.banner_loubo {
+    position: relative;
+    margin-left: 230px;
+    margin-top: 20px;
+    height: 360px;
+    width: 700px;
+    border: 1px solid red;
+}
+
+.banner_loubo li {
+    position: absolute;
+    width: 100%;
+    height: 360px;
+}

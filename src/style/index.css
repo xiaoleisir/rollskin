@@ -1,3 +1,10 @@
+body {
+  background: #f6f6f6;
+  color: #666;
+  height: 100%;
+  min-width: 1240px;
+}
+
 html,
 body,
 div,
@@ -79,26 +86,15 @@ time,
 mark,
 audio,
 video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
-    text-decoration: none;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
-
-.fl {
-    float: left;
-}
-
-.fr {
-    float: right;
-}
-
 
 /* HTML5 display-role reset for older browsers */
-
 article,
 aside,
 details,
@@ -110,52 +106,252 @@ hgroup,
 menu,
 nav,
 section {
-    display: block;
+  display: block;
 }
 
 body {
-    line-height: 1;
+  line-height: 1;
 }
 
 ol,
 ul {
-    list-style: none;
+  list-style: none;
 }
 
 blockquote,
 q {
-    quotes: none;
+  quotes: none;
 }
 
 blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-    content: '';
-    content: none;
+  content: '';
+  content: none;
 }
 
 table {
-    border-collapse: collapse;
-    border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
 }
 
 .top {
-    width: 100%;
-    background-color: #f6f6f6;
+  width: 100%;
+  height: 30px;
+  background: #f6f6f6;
 }
 
 .top .top_main {
-    width: 1200px;
-    height: 30px;
-    margin: 0 auto;
-    line-height: 29px;
-    border: 1px red solid;
+  width: 1200px;
+  margin: 0 auto;
 }
 
-.top .top_main .top_main_right_login {
-    font-size: 12px;
+.top .top_main_right {
+  width: 503.36px;
+  height: 30px;
+  line-height: 30px;
+  font-size: 12px;
+  float: right;
 }
 
+.top .top_main_right_login {
+  height: 29px;
+  float: left;
+}
+
+.top .top_main_right_login a {
+  margin-left: 15px;
+}
+
+#nav-reg {
+  color: red;
+}
+
+.top .top_cart {
+  float: left;
+  position: relative;
+  width: 107px;
+  height: 30px;
+}
+
+.top .top_cart:hover {
+  background: #fff;
+}
+
+.top .top_cart .top_cart_a {
+  width: 107px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.top .top_cart .cart_pic {
+  position: relative;
+  width: 16px;
+  height: 18px;
+  float: left;
+  margin: 7px 11px 0 12px;
+  background: url(../images/icon-total.png) no-repeat 0 -156px;
+}
+
+.cart_font .num {
+  background: none repeat scroll 0 0 #ff464e;
+  display: inline;
+  width: 18px;
+  height: 18px;
+  float: right;
+  border-radius: 18px;
+  line-height: 18px;
+  color: #fff;
+  text-align: center;
+  margin: 5px 10px 0 0;
+}
+
+.top .top_business {
+  margin-left: 15px;
+  float: left;
+}
+
+.top_service {
+  margin-left: 15px;
+  float: left;
+}
+
+.top .top_main .top_main_right a {
+  color: #333;
+}
+
+.header {
+  width: 100%;
+  height: 125px;
+  background: #fff;
+  border-bottom: 2px solid red;
+}
+
+.header_main {
+  position: relative;
+  width: 1200px;
+  height: 85px;
+  margin: 0 auto;
+}
+
+.header .logo {
+  position: absolute;
+  top: 17px;
+  width: 210px;
+  height: 52px;
+  background: url(../images/header-total.png) no-repeat -78px -52px;
+}
+
+.header .strong {
+  width: 465px;
+  height: 33px;
+  position: absolute;
+  top: 28px;
+  right: 290px;
+  background: url(../images/header-total.png) no-repeat 0 0;
+}
+
+.header .strong a {
+  display: block;
+  width: 96px;
+  height: 33px;
+  float: left;
+  margin-left: 50px;
+}
+
+.header .search {
+  position: absolute;
+  top: 25px;
+  right: 0;
+  width: 237px;
+  height: 35px;
+}
+
+.header .search .search_box {
+  float: left;
+  display: block;
+  width: 200px;
+  height: 35px;
+  line-height: 30px;
+  background: #efefef;
+}
+
+.header .search .search_box input {
+  width: 190px;
+  height: 30px;
+  border: none;
+  background: #efefef;
+  margin: 2px 0 0 10px;
+  outline: none;
+  color: #d9d9d9;
+}
+
+.btn_search {
+  float: right;
+  border: 0 none;
+  display: block;
+  width: 37px;
+  height: 35px;
+  background: url(../images/header-total.png) no-repeat right -65px;
+  cursor: pointer;
+  outline: none;
+}
+
+.headernav {
+  width: 1200px;
+  height: 38px;
+  margin: 0 auto;
+}
+
+.header .headernav a {
+  float: left;
+  padding: 12px 24px 0;
+  height: 30px;
+  font-size: 14px;
+}
+
+.header .headernav .navli a:hover {
+  color: red;
+}
+
+.shouye a {
+  border-radius: 6px 6px 0 0;
+  float: left;
+  height: 38px;
+  background: #ff464e;
+  color: #fff;
+}
+
+.navli a {
+  color: #000;
+}
+
+.banner {
+  width: 1200px;
+  height: 380px;
+  margin: 0 auto;
+  border: 1px solid red;
+}
+
+.banner_loubo {
+  position: relative;
+  margin-left: 230px;
+  margin-top: 20px;
+  height: 360px;
+  width: 700px;
+  border: 1px solid red;
+}
+
+.banner_loubo li {
+  position: absolute;
+  width: 100%;
+  height: 360px;
+}
 
 /*# sourceMappingURL=index.css.map */

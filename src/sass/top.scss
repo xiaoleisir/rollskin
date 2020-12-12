@@ -1,14 +1,87 @@
 .top {
-    width: $page_width;
-    background-color: $back;
-    .top_main {
-        width: $box_width;
-        height: $box_height;
-        margin: 0 auto;
-        line-height: 29px;
-        border: 1px red solid;
-        .top_main_right_login {
-            font-size: $font12;
-        }
-    }
+    width: 100%;
+    height: 30px;
+    background: #f6f6f6;
+}
+
+.top .top_main {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.top .top_main_right {
+    width: 503.36px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 12px;
+    float: right;
+}
+
+.top .top_main_right_login {
+    height: 29px;
+    float: left;
+}
+
+.top .top_main_right_login a {
+    margin-left: 15px;
+}
+
+#nav-reg {
+    color: red;
+}
+
+.top .top_cart {
+    float: left;
+    position: relative;
+    width: 107px;
+    height: 30px;
+}
+
+.top .top_cart:hover {
+    background: #fff;
+    // box-shadow: 0 1px 3px #d9d9d9;
+    // height: 30px;
+}
+
+.top .top_cart .top_cart_a {
+    width: 107px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.top .top_cart .cart_pic {
+    position: relative;
+    width: 16px;
+    height: 18px;
+    float: left;
+    margin: 7px 11px 0 12px;
+    background: url(../images/icon-total.png)no-repeat 0 -156px;
+}
+
+.cart_font .num {
+    background: none repeat scroll 0 0 #ff464e;
+    display: inline;
+    width: 18px;
+    height: 18px;
+    float: right;
+    border-radius: 18px;
+    line-height: 18px;
+    color: #fff;
+    text-align: center;
+    margin: 5px 10px 0 0;
+}
+
+.top .top_business {
+    margin-left: 15px;
+    float: left;
+}
+
+.top_service {
+    margin-left: 15px;
+    float: left;
+}
+
+.top .top_main .top_main_right a {
+    color: #333;
 }
