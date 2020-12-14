@@ -1,0 +1,44 @@
+.taobao {
+    padding: 0;
+    list-style: none;
+    zoom: 1;
+    clear: both;
+    margin: 0px auto 0;
+    padding-left: 14px;
+    box-sizing: border-box;
+    width: 1200px;
+    height: 2420px;
+    background: #fff;
+}
+
+.taobao li {
+    color: #666;
+    padding: 0;
+    list-style: none;
+    width: 230px;
+    background: #FFF;
+    float: left;
+    margin: 0 6px 12px 0;
+    height: 290px;
+    box-sizing: border-box;
+    padding-top: 6px;
+    border: 1px solid transparent;
+    font-size: 12px;
+}
+
+.taobao img {
+    width: 220px;
+    height: 220px;
+}
+
+.page {
+    width: 1200px;
+    height: 120px;
+    padding: 0 0 45px;
+    padding-top: 30px;
+    clear: both;
+    overflow: hidden;
+    text-align: center;
+    margin: 0 auto;
+    background: #fff;
+}
