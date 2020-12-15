@@ -1,0 +1,140 @@
+.taobao {
+    padding: 0;
+    list-style: none;
+    zoom: 1;
+    clear: both;
+    margin: 0px auto 0;
+    padding-left: 14px;
+    box-sizing: border-box;
+    width: 1200px;
+    height: 2420px;
+    background: #fff;
+}
+
+.taobao li {
+    color: #666;
+    padding: 0;
+    list-style: none;
+    width: 230px;
+    background: #FFF;
+    float: left;
+    margin: 0 6px 12px 0;
+    height: 290px;
+    box-sizing: border-box;
+    padding-top: 6px;
+    border: 1px solid transparent;
+    font-size: 12px;
+}
+
+.taobao img {
+    width: 220px;
+    height: 220px;
+}
+
+.homelist li span {
+    font-weight: 600;
+    font-size: 16px;
+    color: #ff464e;
+}
+
+.homelist li del {
+    font-size: 14px;
+    color: #bbb;
+    margin: 2px 0 0 5px;
+}
+
+.homelist li div {
+    width: 220px;
+    height: 32px;
+    line-height: 36px;
+}
+
+.page {
+    width: 1200px;
+    height: 120px;
+    padding: 0 0 45px;
+    padding-top: 30px;
+    clear: both;
+    overflow: hidden;
+    text-align: center;
+    margin: 0 auto;
+    background: #fff;
+    line-height: 120px;
+}
+
+.page em {
+    text-align: center;
+    font-style: normal;
+}
+
+.page span.pg-prev {
+    color: #bbb;
+    font-weight: normal;
+    background: #fff;
+    width: 60px;
+    border-radius: 20px 0 0 20px;
+    box-shadow: 1px 1px 3px rgba(204, 204, 204, 0.7);
+}
+
+.page span {
+    background: #ff464e;
+    border: medium none;
+    color: #fff;
+    font-weight: bold;
+}
+
+.page a,
+.page span,
+.page i {
+    background: none repeat scroll 0 0 #FFF;
+    padding: 10px 15px;
+    overflow: hidden;
+    color: #919191;
+    font-size: 14px;
+    font-weight: bold;
+    border-right: none;
+}
+
+.page span {
+    background: #ff464e;
+    border: medium none;
+    color: #fff;
+    font-weight: bold;
+}
+
+.page a.pg-next {
+    width: 60px;
+    border-radius: 0 20px 20px 0;
+    box-shadow: 1px 1px 3px rgba(204, 204, 204, 0.7);
+}
+
+.page_div {
+    height: 45px;
+}
+
+.page a {
+    background: none repeat scroll 0 0 #FFF;
+    padding: 10px 15px;
+    overflow: hidden;
+    color: #919191;
+    font-size: 14px;
+    font-weight: bold;
+    border-right: none;
+    box-shadow: 1px 1px 0px rgba(204, 204, 204, 0.7);
+}
+
+.page i {
+    background: none repeat scroll 0 0 #FFF;
+    padding: 10px 15px;
+    overflow: hidden;
+    color: #919191;
+    font-size: 14px;
+    font-weight: bold;
+    border-right: none;
+    box-shadow: 1px 1px 0px rgba(204, 204, 204, 0.7);
+}
+
+.page a:hover {
+    background: #ff464e;
+    color: #fff;
+}

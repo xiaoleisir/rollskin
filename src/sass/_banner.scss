@@ -146,21 +146,8 @@
     position: relative;
 }
 
-.banner_l dl dd a i {
-    list-style: none;
-    line-height: 53px;
-    text-align: center;
-    color: #5e5e5e;
-    font-style: normal;
-    display: inline-block;
-    width: 24px;
-    height: 24px;
-    vertical-align: middle;
-    position: relative;
-    top: -2px;
-    background: url(../images/ct_icons.png) no-repeat 0 0;
-    margin-right: 5px;
-    background-position: 0 0;
+.banner_l dl dd a:hover {
+    color: red;
 }
 
 .banner_l dl dd a em {

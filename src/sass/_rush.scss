@@ -1,14 +1,20 @@
+.new {
+    width: 100%;
+    height: 60px;
+}
+
 .new_products {
     color: #666;
     zoom: 1;
     clear: both;
-    margin: 30px auto 0px 74.5px;
+    margin: 30px auto 0px auto;
     background: #fff;
     line-height: 60px;
     width: 1200px;
     box-sizing: border-box;
     padding: 0 16px;
-    float: left;
+    position: relative;
+    height: 65px;
 }
 
 .new_products .new_box {
@@ -37,8 +43,9 @@
 }
 
 .whole {
-    float: right;
-    margin-right: 8px;
+    position: absolute;
+    right: 0;
+    margin-right: 20px;
 }
 
 .whole a i {

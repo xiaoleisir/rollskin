@@ -1,5 +1,5 @@
 let ajax = new XMLHttpRequest();
-ajax.open('get', 'http://localhost/dashboard/rollskin/php/taobao.php', true);
+ajax.open('get', 'http://10.31.161.106/dashboard/rollskin/php/taobao.php', true);
 ajax.send();
 ajax.onreadystatechange = function() {
     if (ajax.readyState === 4) {
@@ -13,9 +13,11 @@ ajax.onreadystatechange = function() {
         for (let value of tabaodata) { //数组的值
             taobaohtml += `
                     <li>
-                        <img src="${value.url}"/>
+                        <img class="lazy" data-original="${value.url}" width="200" height="200"/>
+                        <div><span>￥${value.price}</span><del>￥${value.used}</del></span></div>
+                        
                         <p>${value.title}</p>
-                        <span>￥${value.price}</span>
+                       
                     </li>
                 `;
         }
