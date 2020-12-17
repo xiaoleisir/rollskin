@@ -1,0 +1,116 @@
+body {
+    margin: 0;
+    color: #666;
+    padding: 0;
+    font: 12px/1.5 Tahoma, Helvetica, Arial, '宋体', sans-serif, \5b8b\4f53;
+}
+
+.header .logo {
+    background: url(../images/header-total.png)no-repeat -78px -217px;
+}
+
+.header_main {
+    width: 980px;
+}
+
+.header .strong {
+    right: 12px;
+}
+
+.header {
+    border-bottom: 4px solid red;
+}
+
+.login-content {
+    width: 978px;
+    position: relative;
+    background: #fff;
+    overflow: hidden;
+    border: 1px solid #e2e2e2;
+    padding-bottom: 50px;
+    height: 404px;
+    margin: 20px auto 0;
+}
+
+.login_title {
+    width: 878px;
+    padding: 20px 50px;
+    border-bottom: #e2e2e2 solid 1px;
+    overflow: hidden;
+    .hd {
+        color: #ff464e;
+        font-size: 16px;
+        font-family: "微软雅黑", "宋体";
+        margin-right: 10px;
+        background: url(https://jp.juancdn.com/user/images/login/hd-bg.gif) no-repeat center right;
+        padding-right: 20px;
+        float: left;
+    }
+    .tips {
+        color: #666;
+        float: left;
+        margin-top: 3px;
+    }
+    .other {
+        float: right;
+        font-size: 14px;
+        color: #999;
+        a {
+            font-size: 14px;
+            text-decoration: none;
+            color: #0289cd;
+        }
+    }
+}
+
+.login-center {
+    padding: 30px 80px 0 80px;
+    width: 813px;
+    height: auto;
+    overflow: hidden;
+    height: 308px;
+    .content-landing {
+        float: left;
+        display: inline;
+        width: 450px;
+        height: 308px;
+        .box_border {
+            list-style: none;
+            border: 1px solid #666;
+            margin: 30px 0 10px 20px;
+            height: 38px;
+            width: 270px;
+            .user_img {
+                background: url(../images/name2.jpg) no-repeat #f1f1f1;
+                width: 39px;
+                height: 38px;
+                float: left;
+            }
+            input {
+                height: 14px;
+                line-height: 14px;
+                float: left;
+                width: 226px;
+                padding: 12px 0 12px 5px;
+                border: none;
+                outline: none;
+            }
+        }
+    }
+}
+
+.code_img {
+    width: 39px;
+    height: 38px;
+    float: left;
+    background: url(../images/code2.jpg)no-repeat #f1f1f1;
+    ;
+}
+
+.content-landing ul {
+    height: 308px;
+    p {
+        float: left;
+        margin-left: 20px;
+    }
+}

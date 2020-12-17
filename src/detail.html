@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>商品详情页</title>
+    <link rel="stylesheet" href="../src/style/index.css">
+    <link rel="stylesheet" href="../src/style/detail.css">
+    <script src="https://cdn.bootcdn.net/ajax/libs/require.js/2.3.6/require.min.js" defer async=true data-main="script/main.js" id="currentpage" data-origin="detail_module"></script>
+</head>
+
+<body>
+
+
+
+
+
+    <div class="top">
+        <div class="top_main">
+            <div class="top_main_right">
+                <div class="top_main_right_login">
+                    <a href="login.html">登录</a>
+                    <a href="registry.html" id="nav-reg">免费注册</a>
+                    <span> 　|</span>
+                    <a href="javascript:;">我的订单</a>
+                    <a href="javascript:;">商家入驻</a>
+
+                </div>
+                <div class="top_cart">
+                    <a href="cart.html" class="top_cart_a">
+                        <span class="cart_pic"></span>
+                        <span class="cart_font">
+                            <span class="">购物袋</span>
+                        <em class="num">0</em>
+                        </span>
+                    </a>
+
+                </div>
+                <div class="top_business">
+                    <a href="javascript:;">商家中心</a>
+                </div>
+                <div class="top_service">
+                    <a href="javascript:;">客户服务</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 头部 -->
+    <div class="header">
+
+
+        <div class="header_main">
+            <!-- 头部搜索 -->
+            <a href="#">
+                <!-- 首页logo -->
+                <div class="logo"></div>
+            </a>
+            <!-- 限时抢购 -->
+            <div class="strong">
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+            </div>
+            <!-- 头部搜索 -->
+            <div class="search">
+                <span class="search_box">
+                        <input type="text" value="请输入想找的宝贝" onfocus="if(value=='请输入想找的宝贝')value=''" onblur="if(!value)value='请输入想找的宝贝'" name="keyword" > 
+                    </span>
+                <input type="submit" value class="btn_search">
+            </div>
+        </div>
+
+        <!-- 头部导航 -->
+        <div class="headernav">
+            <ul>
+                <li class="shouye">
+                    <a href="./index1.html">首页</a>
+                </li>
+                <li class="navli">
+                    <a href="#">品牌折扣</a>
+                </li>
+                <li class="navli">
+                    <a href="#">9.9包邮</a>
+                </li>
+                <li class="navli">
+                    <a href="#">明日预告</a>
+                </li>
+                <li class="navli">
+                    <a href="#"><em class="new_phone"></em>手机版</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+
+    <!-- 详情页头部文字1 -->
+    <div class="mall_item_info">
+        <!-- 详情页的首页文字 -->
+        <div class="place-show">
+            <div class="place-explain fl">
+                <a href="index1.html" class="tab-links">首页</a>
+                <em class="tab_arrow"></em>
+                <a class="bady-xx-seo tab-links" href="javascript:;">情侣休闲长袖套装</a>
+            </div>
+        </div>
+        <!-- 详情版心 -->
+        <div class="goods_show">
+            <!-- 详情大图小图 -->
+            <div class="deal_pic">
+                <div id="list">
+                    <ul>
+                        <!-- <li class="">
+                        <a href="javascript:;" id="spic">
+                        </a>
+                    </li>
+                    <li class="">
+                        <a href="javascript:;" id="spic">
+                        </a>
+                    </li>
+                    <li class="">
+                        <a href="javascript:;" id="spic">
+                        </a>
+                    </li>
+                    <li class="mr0 cur">
+                        <a href="javascript:;" id="spic">
+                        </a>
+                    </li> -->
+                    </ul>
+                </div>
+
+                <div class="pic" id="bf">
+                    <img src="" alt="" id="bpic">
+                </div>
+                <div class="sale_ad_info_txt">
+                    <span class="sale_text_wrapper">
+                      <span class="sale_ad_txt sale_ad_info_zl">100%人工质检</span>
+                    <span class="sale_ad_txt sale_ad_info_yf_price">全国包邮低价保障</span>
+                    <span class="sale_ad_txt sale_ad_info_reason">7天无理由退货</span>
+                    </span>
+                </div>
+                <div class="sector_other">
+                    <div class="collect"><a href="javascript:;"><i></i>收藏</a>
+                    </div>
+                    <div class="share_box">
+                        <a href="javascript:;"><i></i>分享</a>
+                    </div>
+                    <div class="report"><a href="javascript:;">举报</a></div>
+                </div>
+            </div>
+            <!-- 详情购买信息 -->
+            <div class="deal_wrap">
+                <h1>
+                    休闲裤男夏季男裤薄款九分裤男宽松束脚运动裤修身小脚潮流学 </h1>
+                <!-- 参考价 -->
+                <div class="sector_info">
+                    <div class="J_basic">
+                        <!-- 参考价 -->
+                        <div class="d_info">
+                            <dl class="tm_price">
+                                <dd class="price">
+                                    <span class="current"><i class="symbols">￥</i><span class="loadpcp"></span></span>
+                                    <span class="old">参考价:<em class="u-yen">¥</em><span class="js-oprice"></span></span>
+                                </dd>
+                            </dl>
+                        </div>
+                        <dl class="freight clear">
+                            <dt>配送：</dt>
+                            <dd>
+
+                                <div class="address">杭州市 至 <span class="address_selector"><em class="js-address" attr-id="420000"></em><i></i></span>
+                                    <div class="city">
+                                    </div>
+                                </div>
+                                <div class="by" data-post="0" style="display: inline-block;">包邮,</div>
+                                <span class="sale_ad_txt sale_ad_info_time">24小时发货</span>
+
+
+                            </dd>
+                        </dl>
+                    </div>
+                    <!-- 尺码颜色 -->
+                    <div class="J_other">
+                        <dl class="color">
+                            <dt>颜色：</dt>
+                            <dd class="color_wrapper">
+                                <ul>
+                                    <li class="attr_pic cur">
+                                        <a href="javascript:;"><img src="https://goods6.juancdn.com/goods/190819/b/2/5d5a0c72b6f8ea14483d7a96_800x800.jpg?imageMogr2/thumbnail/34x34!/quality/88!/format/jpg" alt=""></a>
+                                        <span class="sku_attr_title">灰色</span>
+                                    </li>
+                                    <li style="border: 1px solid #cccccc;" class="attr_pic" data-c="2">
+                                        <a title="蓝色"><img src="https://goods7.juancdn.com/goods/190819/d/c/5d5a0c8733b0890445786809_800x800.jpg?iopcmd=thumbnail&amp;type=11&amp;height=34&amp;width=34%7Ciopcmd=convert&amp;Q=88&amp;dst=jpg" height="22px" width="22px">
+                                            <span class="sku_attr_title">蓝色</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </dd>
+                        </dl>
+
+                        <!-- 尺码 -->
+                        <dl class="size clear"><dt>尺码：</dt>
+                            <dd class="size_wrapper">
+                                <ul>
+                                    <li class="nos" data-c="101"><a href="javascript:void(0)"><span class="c">M</span></a></li>
+                                    <li class="nos" data-c="102"><a href="javascript:void(0)"><span class="c">L</span></a></li>
+                                    <li class="nos" data-c="103"><a href="javascript:void(0)"><span class="c">XL</span></a></li>
+                                    <li class="nos" data-c="104"><a href="javascript:void(0)"><span class="c">XXL</span></a></li>
+                                    <li class="nos" data-c="105"><a href="javascript:void(0)"><span class="c">3XL</span></a></li>
+                                </ul>
+                            </dd>
+                        </dl>
+
+                    </div>
+                    <!-- 数量 -->
+                    <dl class="number">
+                        <dt>数量：</dt>
+                        <dd>
+                            <p>
+                                <i>-</i>
+                                <input type="text" id="count" value="1" />
+                                <i>+</i>
+                            </p>
+                        </dd>
+                    </dl>
+                    <!-- 加入购物车 -->
+                    <div class="submit_go">
+                        <a href="javascript:;" class="js_btn">立即购买</a>
+                        <a href="javascript:;" class="add_cart_btn p-btn">加入购物车</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="deal_store">
+                <div class="store_wrapper">
+                    <div class="deal_store_img"><img src="https://goods3.juancdn.com/seller/180724/4/c/5b56da45b6f8ea6f892c07af_180x90.png?iopcmd=thumbnail&type=11&height=58&width=58%7Ciopcmd=convert&Q=88&dst=png"></div>
+                    <div class="deal_store_name">
+                        <a href="javascript:;">祺杰仕男装官方旗舰店</a>
+                    </div>
+                    <div class="deal_buy_nums">共200+件商品</div>
+                </div>
+
+                <!-- 金牌认证 -->
+                <div class="store_desc">
+                    <div class="sale_pd">
+                        <img src="https://jp.juancdn.com/juanpi/images/shopping/gold.png"> 金牌认证
+                    </div>
+                    <div class="sale_ps">
+                        <img src="//jp.juancdn.com/juanpi/images/shopping/bail.png"> 已缴纳保证金
+                    </div>
+                    <div class="sale_license">
+                        <img src="//jp.juancdn.com/juanpi/images/shopping/license.png"> 营业执照
+                    </div>
+                </div>
+                <div class="to_im">
+                    <img src="//jp.juancdn.com/juanpi/images/shopping/connect.png">
+                    <a href="javascript:;">联系客服</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>

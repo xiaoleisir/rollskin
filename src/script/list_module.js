@@ -27,8 +27,10 @@ define(['pagination', 'jlazyload'], function() {
                         <li>
                             <a href="detail.html?sid=${value.sid}">
                                 <img class="lazy" data-original="${value.url}" width="200" height="200"/>
-                                <p>${value.title}</p>
                                 <span>￥${value.price}</span>
+                                <del>￥${value.used}</del>
+                                <p>${value.title}</p>
+                                
                             </a>
                         </li>
                     `;
@@ -43,7 +45,6 @@ define(['pagination', 'jlazyload'], function() {
                     $array[index] = $(this); //排序后
                 });
                 console.log($array_default);
-
 
                 //2.进行分页设置(html页面载入分页的结构)
                 $('.page').pagination({
@@ -67,8 +68,9 @@ define(['pagination', 'jlazyload'], function() {
                                         <li>
                                             <a href="detail.html?sid=${value.sid}">
                                                 <img class="lazy" data-original="${value.url}" width="200" height="200"/>
+                                                 <span>￥${value.price}</span>
+                                                 <del>￥${value.used}</del>
                                                 <p>${value.title}</p>
-                                                <span>￥${value.price}</span>
                                             </a>
                                         </li>
                                     `;
@@ -78,60 +80,11 @@ define(['pagination', 'jlazyload'], function() {
                             $("img.lazy").lazyload({ effect: "fadeIn" });
 
                             //将li元素添加到排序前的数组中。
-                            $('.list li').each(function(index, element) { //element:原生的元素对象
-                                $array_default[index] = $(this); //排序前
-                                $array[index] = $(this); //排序后
-                            });
-                            console.log($array_default);
+
                         });
                     }
                 });
 
-
-                //3.点击按钮进行排序
-                $('button').eq(0).on('click', function() {
-                    //遍历渲染。
-                    $.each($array_default, function(index, value) { //value就是li元素
-                        $list.append(value);
-                    });
-                });
-                $('button').eq(1).on('click', function() {
-                    for (let i = 0; i < $array.length - 1; i++) {
-                        for (let j = 0; j < $array.length - i - 1; j++) {
-                            $prev = parseFloat($array[j].find('span').html().substring(1)); //上一个价格
-                            $next = parseFloat($array[j + 1].find('span').html().substring(1)); //下一个价格
-                            if ($prev > $next) {
-                                //通过价格的比较,交换的是里面的这个li元素
-                                let temp = $array[j];
-                                $array[j] = $array[j + 1];
-                                $array[j + 1] = temp;
-                            }
-                        }
-                    }
-                    //遍历渲染。
-                    $.each($array, function(index, value) { //value就是li元素
-                        $list.append(value);
-                    });
-                });
-
-                $('button').eq(2).on('click', function() {
-                    for (let i = 0; i < $array.length - 1; i++) {
-                        for (let j = 0; j < $array.length - i - 1; j++) {
-                            $prev = parseFloat($array[j].find('span').html().substring(1)); //上一个价格
-                            $next = parseFloat($array[j + 1].find('span').html().substring(1)); //下一个价格
-                            if ($prev < $next) {
-                                //通过价格的比较,交换的是里面的这个li元素
-                                let temp = $array[j];
-                                $array[j] = $array[j + 1];
-                                $array[j + 1] = temp;
-                            }
-                        }
-                    }
-                    //遍历渲染。
-                    $.each($array, function(index, value) { //value就是li元素
-                        $list.append(value);
-                    });
-                });
 
 
             });

@@ -12,7 +12,7 @@ if($mysql->connect_error){
 }
 
 
-$result=$mysql->query("select * from taobao");
+$result=$mysql->query("select * from hometaobao ");
 
 $arr=array();
 

@@ -2,7 +2,6 @@
 body {
   background: #f6f6f6;
   color: #666;
-  height: 3000px;
   min-width: 1240px;
 }
 
@@ -229,7 +228,6 @@ a {
 
 .header {
   width: 100%;
-  height: 125px;
   background: #fff;
   border-bottom: 2px solid red;
 }
@@ -313,7 +311,7 @@ a {
 .header .headernav a {
   float: left;
   padding: 12px 24px 0;
-  height: 30px;
+  height: 26px;
   font-size: 14px;
 }
 
@@ -331,6 +329,21 @@ a {
 
 .navli a {
   color: #000;
+}
+
+.new_phone {
+  list-style: none;
+  cursor: pointer;
+  color: #333;
+  font-size: 14px;
+  font-style: normal;
+  width: 12px;
+  float: left;
+  margin-right: 3px;
+  vertical-align: baseline;
+  background: url(../images/global/phone-new-20151119.png?20160112) no-repeat;
+  height: 16px;
+  background: url(../images/phone-new-20151119.png) no-repeat;
 }
 
 .lunbo {
@@ -1047,11 +1060,9 @@ a {
   z-index: 100;
   border-top: #ce003f solid 1px;
   clear: both;
-  height: 355px;
 }
 .footer .footer_bg {
   border-top: #ff464e solid 4px;
-  height: 350px;
 }
 
 .footer_top {

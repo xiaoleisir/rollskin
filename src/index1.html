@@ -9,6 +9,36 @@
     <meta content="卷皮折扣汇聚全网优质折扣商品，每日精选千款超值折扣商品9.9元起全场包邮1折特卖，每天10点限时秒杀！上卷皮购便宜！" name="description">
     <link rel="stylesheet" href="style/index.css">
     <script src="https://cdn.bootcdn.net/ajax/libs/require.js/2.3.6/require.min.js" defer async=true data-main="script/main.js" id="currentpage" data-origin="list_module_copy"></script>
+    <style>
+        .box {
+            width: 100%;
+            height: 60px;
+            background: #ffffff;
+            position: fixed;
+            top: -60px;
+            left: 0;
+            box-shadow: 0px 0px 4px #999;
+        }
+        
+        .box .line-cate-nav {
+            color: #666;
+            list-style: none;
+            width: 1200px;
+            margin: 0 auto;
+            height: 20px;
+            line-height: 20px;
+        }
+        
+        .box .line-cate-nav li {
+            color: #666;
+            list-style: none;
+            float: left;
+            height: 20px;
+            line-height: 20px;
+            padding: 0 15px;
+            line-height: 50px;
+        }
+    </style>
     <!-- <link rel="stylesheet" href="style/public.css"> -->
 </head>
 
@@ -55,7 +85,7 @@
 
         <div class="header_main">
             <!-- 头部搜索 -->
-            <a href="#">
+            <a href="index1.html">
                 <!-- 首页logo -->
                 <div class="logo"></div>
             </a>
@@ -90,7 +120,7 @@
                     <a href="#">即将上线</a>
                 </li>
                 <li class="navli">
-                    <a href="#">手机版</a>
+                    <a href="#"><em class="new_phone"></em> 手机版</a>
                 </li>
             </ul>
         </div>
@@ -536,7 +566,26 @@
         </div>
 
     </div>
-
+    <div class="box">
+        <ul class="line-cate-nav">
+            <li class="first"><a class="active" href="//www.juanpi.com" style="color: #ff464e;">今日上新</a></li>
+            <li><a class="">女装</a></li>
+            <li><a class="">男装</a></li>
+            <li><a class="">鞋子</a></li>
+            <li><a class="">箱包</a></li>
+            <li><a class="">母婴</a></li>
+            <li><a class="">美妆</a></li>
+            <li><a class="">居家</a></li>
+            <li><a class="">家纺</a></li>
+            <li><a class="">文体</a></li>
+            <li><a class="">美食</a></li>
+            <li><a class="">数码</a></li>
+            <li><a class="">电器</a></li>
+            <li><a class="">内衣</a></li>
+            <li><a class="">配饰</a></li>
+            <li class="last"><a style="color: #336600;">[即将上线]</a></li>
+        </ul>
+    </div>
 
 
 </body>
@@ -544,5 +593,20 @@
 
 </html>
 <script src=" https://cdn.bootcdn.net/ajax/libs/jquery/1.12.4/jquery.min.js "></script>
+<script>
+    let box = $(".box");
+    $(window).on("scroll", function() {
+        let $scrolltop = $(window).scrollTop();
+        if ($scrolltop >= 500) {
+            box.stop(true).animate({
+                top: 0
+            })
+        } else {
+            box.stop(true).animate({
+                top: -60
+            })
+        }
+    })
+</script>
 <script src="../src/script/banner.js "></script>
 <script src="../src/script/homelist.js "></script>

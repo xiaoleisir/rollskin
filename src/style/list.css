@@ -4,10 +4,20 @@
   list-style: none;
 }
 
+body {
+  background: #fff;
+}
+
 .list {
   width: 1160px;
   margin: 0 auto;
   font-size: 14px;
+  background: #fff;
+}
+
+.list_body {
+  width: 100%;
+  background: #fff;
 }
 
 .list li {
@@ -15,7 +25,6 @@
   padding: 10px;
   float: left;
   margin: 0 10px 10px 0;
-  border: 1px solid #ccc;
   height: 310px;
   position: relative;
 }
@@ -23,8 +32,9 @@
 .list li p {
   width: 200px;
   height: 48px;
-  line-height: 24px;
   overflow: hidden;
+  color: #333;
+  font-size: 12px;
 }
 
 .list li img {
@@ -34,7 +44,65 @@
 }
 
 .list li span {
+  list-style: none;
+  line-height: 36px;
   display: block;
+  float: left;
+  font-size: 18px;
+  font-family: Arial;
+  color: #ff464e;
+}
+
+.list del {
+  line-height: 36px;
+  display: block;
+  float: left;
+  margin: 2px 0 0 5px;
+  line-height: 36px;
+  color: #bbb;
+  text-decoration: line-through;
+  font-size: 14px;
+}
+
+.line-cate-nav-location {
+  height: 50px;
+}
+.line-cate-nav-location div {
+  width: 100%;
+  background-color: #fff;
+  padding: 15px 0;
+}
+.line-cate-nav-location div ul {
+  list-style: none;
+  width: 1200px;
+  margin: 0 auto;
+  height: 20px;
+  line-height: 20px;
+}
+.line-cate-nav-location div ul .line-cate-nav {
+  width: 1200px;
+  margin: 0 auto;
+  height: 20px;
+  line-height: 20px;
+}
+
+.line-cate-nav li {
+  float: left;
+  height: 20px;
+  line-height: 20px;
+  padding: 0 15px;
+  font-size: 14px;
+}
+.line-cate-nav li a {
+  color: #333;
+}
+.line-cate-nav li :hover {
+  color: red;
+}
+
+.first {
+  border-right: 1px solid #ccc;
+  padding-left: 0;
 }
 
 /*# sourceMappingURL=list.css.map */

@@ -6,20 +6,187 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>注册页面</title>
+    <link rel="stylesheet" href="../src/style/index.css">
+    <link rel="stylesheet" href="../src/style/login.css">
+    <script src="https://cdn.bootcdn.net/ajax/libs/require.js/2.3.6/require.min.js" defer async=true data-main="script/main.js" id="currentpage" data-origin="registry_module"></script>
 </head>
 
 <body>
-    <fieldset style="width:500px;margin:0 auto;">
-        <legend>用户注册</legend>
-        <form action="http://localhost/JS2010/week06/Day%2029-Day%2031_jquery/loginregistry/php/reg.php" method="post">
-            <p><label for="">用户名：</label><input type="text" name="username" id="username"><span></span></p>
-            <p><label for="">密　码：</label><input type="password" name="password"></p>
-            <p><label for="">邮　箱：</label><input type="text" name="email"></p>
-            <p><input type="submit" value="提交注册" name="submit" id="submit"></p>
-        </form>
-    </fieldset>
+
+    <div class="header">
+        <div class="header_main">
+            <!-- 头部搜索 -->
+            <a href="index1.html">
+                <!-- 首页logo -->
+                <div class="logo"></div>
+            </a>
+            <!-- 限时抢购 -->
+            <div class="strong">
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+            </div>
+            <!-- 头部搜索 -->
+
+        </div>
+    </div>
+    <!-- <label for="">手机号码：</label>
+    <label for="">用户密码：</label> -->
+    <div class="login-content">
+        <!-- title -->
+        <div class="login_title">
+            <span class="hd">新用户注册</span>
+            <span class="tips">注册卷皮网，赢积分换好礼！</span>
+            <p class="other">已有账号，
+                <a href="login.html" rel="nofollow">立即登录</a>
+            </p>
+        </div>
+        <div class="login-center">
+            <div class="content-landing">
+                <form action="http://10.31.161.106/dashboard/rollskin/php/reg.php" method="post" id="form1">
+                    <!-- <input type="text" name="tel"><span></span>
+                    <input type="password" name="password"><span></span> -->
+                    <div class="box_border">
+                        <div class="user_img"></div>
+                        <input type="text" name="tel"><span></span>
+
+                    </div>
+                    <div class="box_border">
+                        <div class="code_img"></div>
+                        <input type="password" name="password"><span></span>
+                    </div>
+                    <input type="submit" value="提交注册" name="submit" id="submit" class="login_denlu" style="height: 38px; background: red; color: #fff; width: 270px; margin-left: 20px; margin-top: 30px; ">
+
+                </form>
+
+            </div>
+            <div>
+                <img src="https://jp.juancdn.com/user/images/login/login-bj-ad01.png?ts=20201022174388-1&sv=1d2c4e4e" alt="">
+            </div>
+        </div>
+
+    </div>
+    <!-- 
+    <div class="login_content">
+        <fieldset style="width:700px;margin:0 auto;">
+            <legend>用户注册</legend>
+            
+        </fieldset>
+    </div> -->
+
+
+
+    <div class="footer">
+        <div class="footer_bg">
+            <!-- 底部最上方 -->
+            <div class="footer_top">
+                <div class="footer_code">
+                    <p class="footer_code_pic"></p>
+                    <p class="footer_code_title">随时逛 及时抢</p>
+                </div>
+                <div class="footer_title">
+                    <dl class="update">
+                        <dt>获取更新</dt>
+                        <dt></dt>
+                        <dd>
+                            <a href="javascript:;"><i></i>iPhone/Android</a>
+                        </dd>
+                        <dd>
+                            <a href="javascript:;"><i></i>卷皮QQ空间</a>
+                        </dd>
+                        <dd>
+                            <a href="javascript:;"><i></i>卷皮新浪微博</a>
+                        </dd>
+                        <dd>
+                            <a href="javascript:;"><i></i>开放API</a>
+                        </dd>
+                    </dl>
+                    <dl class="cooperation">
+                        <dt>商务合作</dt>
+                        <dt></dt>
+                        <dd>
+                            <a href="javascript:;"><i></i>卖家免费报名</a>
+                        </dd>
+                        <dd>
+                            <a href="javascript:;"><i></i>商家入驻</a>
+                        </dd>
+                        <dd>
+                            <a href="javascript:;"><i></i>廉政邮箱</a>
+                        </dd>
+                        <dd>
+                            <a href="javascript:;"><i></i>开放平台</a>
+                        </dd>
+                    </dl>
+                    <dl class="business">
+                        <dt>公司信息</dt>
+                        <dt></dt>
+                        <dd>
+                            <a href="javascript:;"><i></i>关于卷皮</a>
+                        </dd>
+                        <dd>
+                            <a href="javascript:;"><i></i>媒体报道</a>
+                        </dd>
+                    </dl>
+                    <dl class="help">
+                        <dt>帮助中心</dt>
+                        <dt></dt>
+                        <dd>
+                            <a href="javascript:;"><i></i>新手上路</a>
+                        </dd>
+                        <dd>
+                            <a href="javascript:;"><i></i>网上地图</a>
+                        </dd>
+                    </dl>
+
+
+                </div>
+                <div class="footer_telephone">
+                    <a href="javascript:;"></a>
+                    <span>
+                        <p>周一至周日</p>
+                        <p>9:00-18:00</p>
+                    </span>
+                    <p class="phone">客服热线: 400-0090-869</p>
+                </div>
+
+            </div>
+            <div class="footer_lunbo">
+                <span>友情链接：</span>
+                <div class="lunbo_list">
+                    <ul>
+                        <li>
+                            <a href="javascript:;">国画</a>
+                            <a href="javascript:;">易登网</a>
+                            <a href="javascript:;">普洱茶</a>
+                            <a href="javascript:;">品牌鞋</a>
+                            <a href="javascript:;">乐蜂网优惠券</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">小分店</a>
+                            <a href="javascript:;">九块邮</a>
+                            <a href="javascript:;">易迅优惠券</a>
+                            <a href="javascript:;">中国鲜花礼品网</a>
+                            <a href="javascript:;">钻石小鸟</a>
+                            <a href="javascript:;">箱包品牌</a>
+                            <a href="javascript:;">网上购物</a>
+                            <a href="javascript:;">中国品牌网</a>
+                            <a href="javascript:;">会过VIP</a>
+                            <a href="javascript:; ">家具网</a>
+                        </li>
+                    </ul>
+                </div>
+                <a href="javascript:;" class="more">更多&gt;&gt;</a>
+            </div>
+
+            <!-- 底部信息 -->
+            <p class="licence">武汉奇米网络科技有限公司 鄂ICP备10209250号 | ICP许可证号：鄂B2-20150109 |
+                <a href="">鄂公网安备42018502000390号</a> | 食品流通许可证 SP4201991510041888
+            </p>
+            <p class="copyright">Copyright © 2010 -2020 JuanPi.com All Rights Reserved</p>
+        </div>
+
+    </div>
 </body>
 
 </html>
 <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="script/registry.js"></script>

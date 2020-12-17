@@ -5,12 +5,131 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>商品列表页</title>
-    <link rel="stylesheet" href="../src/style/pagination.css">
+    <link rel="stylesheet" href="./style/index.css">
     <link rel="stylesheet" href="../src/style/list.css">
     <script src="https://cdn.bootcdn.net/ajax/libs/require.js/2.3.6/require.min.js" defer async=true data-main="script/main.js" id="currentpage" data-origin="list_module"></script>
+    <style>
+        .jump-ipt {
+            display: none;
+        }
+        
+        .jump-btn {
+            display: none;
+        }
+        
+        .prev {
+            border-radius: 20px 0 0 20px;
+        }
+        
+        .next {
+            border-radius: 0 20px 20px 0;
+        }
+    </style>
 </head>
 
 <body>
+    <div class="top">
+        <div class="top_main">
+            <div class="top_main_right">
+                <div class="top_main_right_login">
+                    <a href="login.html">登录</a>
+                    <a href="registry.html" id="nav-reg">免费注册</a>
+                    <span> 　|</span>
+                    <a href="javascript:;">我的订单</a>
+                    <a href="javascript:;">商家入驻</a>
+
+                </div>
+                <div class="top_cart">
+                    <a href="cart.html" class="top_cart_a">
+                        <span class="cart_pic"></span>
+                        <span class="cart_font">
+                            <span class="">购物袋</span>
+                        <em class="num">0</em>
+                        </span>
+                    </a>
+
+                </div>
+                <div class="top_business">
+                    <a href="javascript:;">商家中心</a>
+                </div>
+                <div class="top_service">
+                    <a href="javascript:;">客户服务</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 头部 -->
+    <div class="header">
+
+
+        <div class="header_main">
+            <!-- 头部搜索 -->
+            <a href="#">
+                <!-- 首页logo -->
+                <div class="logo"></div>
+            </a>
+            <!-- 限时抢购 -->
+            <div class="strong">
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+            </div>
+            <!-- 头部搜索 -->
+            <div class="search">
+                <span class="search_box">
+                        <input type="text" value="请输入想找的宝贝" onfocus="if(value=='请输入想找的宝贝')value=''" onblur="if(!value)value='请输入想找的宝贝'" name="keyword" > 
+                    </span>
+                <input type="submit" value class="btn_search">
+            </div>
+        </div>
+
+        <!-- 头部导航 -->
+        <div class="headernav">
+            <ul>
+                <li class="shouye">
+                    <a href="./index1.html">首页</a>
+                </li>
+                <li class="navli">
+                    <a href="#">品牌折扣</a>
+                </li>
+                <li class="navli">
+                    <a href="#">9.9包邮</a>
+                </li>
+                <li class="navli">
+                    <a href="#">即将上线</a>
+                </li>
+                <li class="navli">
+                    <a href="#"><em class="new_phone"></em>手机版</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="line-cate-nav-location">
+        <div class="line-cate-nav-wrapper">
+            <ul class="line-cate-nav">
+                <li class="first"><a href="javascript:;">今日上新</a></li>
+                <li><a class="" href="javascript:;">女装</a></li>
+                <li><a class="active" href="javascript:;">男装</a></li>
+                <li><a class="" href="javascript:;">鞋子</a></li>
+                <li><a class="" href="javascript:;">箱包</a></li>
+                <li><a class="" href="javascript:;">母婴</a></li>
+                <li><a class="" href="javascript:;">美妆</a></li>
+                <li><a class="" href="javascript:;">居家</a></li>
+                <li><a class="" href="javascript:;">家纺</a></li>
+                <li><a class="" href="javascript:;">文体</a></li>
+                <li><a class="" href="javascript:;">美食</a></li>
+                <li><a class="" href="javascript:;">数码</a></li>
+                <li><a class="" href="javascript:;">电器</a></li>
+                <li><a class="" href="javascript:;">内衣</a></li>
+                <li><a class="" href="javascript:;">配饰</a></li>
+                <li class="last-2"><a href="javascript:;">[即将上线]</a></li>
+            </ul>
+        </div>
+    </div>
+
+
+
     <!-- 列表页的结构 -->
     <div class="list">
         <ul>
@@ -18,13 +137,130 @@
         </ul>
     </div>
 
-    <!-- 分页的结构：直接复制使用 -->
-    <div class="pagelist">
-        <div class="m-style page">
+
+    <div class="page "><em></em>
+        <div class="page_div">
+            <span class="pg-prev">上一页</span>
+            <span>1</span>
+            <a href="javascript:;">2</a><a href="javascript:;">3</a>
+            <i>...</i>
+            <a href="javascript:;">13</a>
+            <a class="pg-next" href="javascript:;">下一页</a>
         </div>
     </div>
+    <!-- </div> -->
+    <!-- top区域 -->
+
+    <!-- 详情页底部 -->
+    <div class="footer">
+        <div class="footer_bg">
+            <!-- 底部最上方 -->
+            <div class="footer_top">
+                <div class="footer_code">
+                    <p class="footer_code_pic"></p>
+                    <p class="footer_code_title">随时逛 及时抢</p>
+                </div>
+                <div class="footer_title">
+                    <dl class="update">
+                        <dt>获取更新</dt>
+                        <dt></dt>
+                        <dd>
+                            <a href="javascript:;"><i></i>iPhone/Android</a>
+                        </dd>
+                        <dd>
+                            <a href="javascript:;"><i></i>卷皮QQ空间</a>
+                        </dd>
+                        <dd>
+                            <a href="javascript:;"><i></i>卷皮新浪微博</a>
+                        </dd>
+                        <dd>
+                            <a href="javascript:;"><i></i>开放API</a>
+                        </dd>
+                    </dl>
+                    <dl class="cooperation">
+                        <dt>商务合作</dt>
+                        <dt></dt>
+                        <dd>
+                            <a href="javascript:;"><i></i>卖家免费报名</a>
+                        </dd>
+                        <dd>
+                            <a href="javascript:;"><i></i>商家入驻</a>
+                        </dd>
+                        <dd>
+                            <a href="javascript:;"><i></i>廉政邮箱</a>
+                        </dd>
+                        <dd>
+                            <a href="javascript:;"><i></i>开放平台</a>
+                        </dd>
+                    </dl>
+                    <dl class="business">
+                        <dt>公司信息</dt>
+                        <dt></dt>
+                        <dd>
+                            <a href="javascript:;"><i></i>关于卷皮</a>
+                        </dd>
+                        <dd>
+                            <a href="javascript:;"><i></i>媒体报道</a>
+                        </dd>
+                    </dl>
+                    <dl class="help">
+                        <dt>帮助中心</dt>
+                        <dt></dt>
+                        <dd>
+                            <a href="javascript:;"><i></i>新手上路</a>
+                        </dd>
+                        <dd>
+                            <a href="javascript:;"><i></i>网上地图</a>
+                        </dd>
+                    </dl>
 
 
+                </div>
+                <div class="footer_telephone">
+                    <a href="javascript:;"></a>
+                    <span>
+                        <p>周一至周日</p>
+                        <p>9:00-18:00</p>
+                    </span>
+                    <p class="phone">客服热线: 400-0090-869</p>
+                </div>
+
+            </div>
+            <div class="footer_lunbo">
+                <span>友情链接：</span>
+                <div class="lunbo_list">
+                    <ul>
+                        <li>
+                            <a href="javascript:;">国画</a>
+                            <a href="javascript:;">易登网</a>
+                            <a href="javascript:;">普洱茶</a>
+                            <a href="javascript:;">品牌鞋</a>
+                            <a href="javascript:;">乐蜂网优惠券</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">小分店</a>
+                            <a href="javascript:;">九块邮</a>
+                            <a href="javascript:;">易迅优惠券</a>
+                            <a href="javascript:;">中国鲜花礼品网</a>
+                            <a href="javascript:;">钻石小鸟</a>
+                            <a href="javascript:;">箱包品牌</a>
+                            <a href="javascript:;">网上购物</a>
+                            <a href="javascript:;">中国品牌网</a>
+                            <a href="javascript:;">会过VIP</a>
+                            <a href="javascript:; ">家具网</a>
+                        </li>
+                    </ul>
+                </div>
+                <a href="javascript:;" class="more">更多>></a>
+            </div>
+
+            <!-- 底部信息 -->
+            <p class="licence">武汉奇米网络科技有限公司 鄂ICP备10209250号 | ICP许可证号：鄂B2-20150109 |
+                <a href="">鄂公网安备42018502000390号</a> | 食品流通许可证 SP4201991510041888
+            </p>
+            <p class="copyright">Copyright © 2010 -2020 JuanPi.com All Rights Reserved</p>
+        </div>
+    </div>
 </body>
 
 </html>
