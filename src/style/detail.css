@@ -1,4 +1,9 @@
 @charset "UTF-8";
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
 body {
   background: #fff;
   color: #000;
@@ -48,7 +53,7 @@ body {
 }
 
 .header .logo {
-  background: url(../images/header-total.png) no-repeat -78px -390px;
+  background: url(https://jp.juancdn.com/juanpi/images/total/header-total.gif?20160112) no-repeat -78px -390px;
 }
 
 .goods_show {
@@ -451,6 +456,9 @@ body {
   display: block;
   min-width: 34px;
 }
+.size_wrapper ul li :hover {
+  color: red;
+}
 
 .number {
   font: 12px/1.5 "微软雅黑", Tahoma, Helvetica, Arial, '宋体', sans-serif, \5b8b\4f53;
@@ -545,6 +553,10 @@ body {
   color: #fff;
   border-color: transparent;
   margin-left: 40px;
+}
+
+.add_cart_btn:hover {
+  color: orange;
 }
 
 .deal_store {

@@ -244,7 +244,7 @@ a {
   top: 17px;
   width: 210px;
   height: 52px;
-  background: url(../images/header-total.png) no-repeat -78px -52px;
+  background: url(https://jp.juancdn.com/juanpi/images/total/header-total.gif?20160112) no-repeat -78px -52px;
 }
 
 .header .strong {
@@ -297,7 +297,7 @@ a {
   display: block;
   width: 37px;
   height: 35px;
-  background: url(../images/header-total.png) no-repeat right -65px;
+  background: url(https://jp.juancdn.com/juanpi/images/total/header-total.gif?20160112) no-repeat right -65px;
   cursor: pointer;
   outline: none;
 }
@@ -341,9 +341,8 @@ a {
   float: left;
   margin-right: 3px;
   vertical-align: baseline;
-  background: url(../images/global/phone-new-20151119.png?20160112) no-repeat;
   height: 16px;
-  background: url(../images/phone-new-20151119.png) no-repeat;
+  background: url(https://jp.juancdn.com/juanpi/images/global/phone-new-20151119.png?20160112) no-repeat;
 }
 
 .lunbo {
@@ -394,7 +393,7 @@ a {
 }
 
 .round .active {
-  background: blue;
+  background: greenyellow;
 }
 
 .round {
@@ -411,10 +410,11 @@ a {
   display: inline-block;
   width: 10px;
   height: 10px;
-  background: #fff;
+  background: none;
   cursor: pointer;
   border-radius: 10px;
   margin-left: 10px;
+  border: 3px solid #fff;
 }
 
 .round .current {
@@ -458,7 +458,6 @@ a {
 
 .banner_l dl {
   color: #666;
-  margin: 0;
   list-style: none;
   width: 190px;
   height: 377px;
@@ -470,8 +469,6 @@ a {
 .banner_l dl dd {
   color: #666;
   list-style: none;
-  margin: 0;
-  padding: 0;
   float: left;
   width: 50%;
   height: 54px;
@@ -522,8 +519,6 @@ a {
 .banner_r dl {
   color: #666;
   visibility: visible;
-  margin: 0;
-  padding: 0;
   list-style: none;
   width: 251px;
   height: 360px;
@@ -535,7 +530,6 @@ a {
   color: #666;
   visibility: visible;
   list-style: none;
-  padding: 0;
   float: left;
   display: inline;
   height: 119px;
@@ -912,7 +906,6 @@ a {
 }
 
 .taobao {
-  padding: 0;
   list-style: none;
   zoom: 1;
   clear: both;
@@ -926,7 +919,6 @@ a {
 
 .taobao li {
   color: #666;
-  padding: 0;
   list-style: none;
   width: 230px;
   background: #FFF;
@@ -1077,7 +1069,7 @@ a {
   width: 90px;
 }
 .footer_top .footer_code .footer_code_pic {
-  background: url(../images/jp-app-90.png) no-repeat;
+  background: url(https://jp.juancdn.com/juanpi/images/global/jp-app-90.png?v=20160113) no-repeat;
   height: 90px;
   width: 90px;
   margin-top: 5px;
@@ -1279,6 +1271,35 @@ a {
   color: #5e5e5e;
   border: 0;
   margin-right: 27px;
+}
+
+.box {
+  width: 100%;
+  height: 60px;
+  background: #ffffff;
+  position: fixed;
+  top: -60px;
+  left: 0;
+  box-shadow: 0px 0px 4px #999;
+}
+
+.box .line-cate-nav {
+  color: #666;
+  list-style: none;
+  width: 1200px;
+  margin: 0 auto;
+  height: 20px;
+  line-height: 20px;
+}
+
+.box .line-cate-nav li {
+  color: #666;
+  list-style: none;
+  float: left;
+  height: 20px;
+  line-height: 20px;
+  padding: 0 15px;
+  line-height: 50px;
 }
 
 /*# sourceMappingURL=index.css.map */

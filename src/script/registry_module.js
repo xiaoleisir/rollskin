@@ -1,28 +1,17 @@
 define([], function() {
     return {
         init: function() {
-            //1.表单验证。
-            let $form = $('#form1'); //form表单。
-            let $tel = $('[name=tel]'); //手机号码s
-            let $password = $('[name=password]'); //邮箱
-            let $span = $('#form1 span'); //4个span
-
-            // 定义检测标记
-
+            let $form = $('#form1');
+            let $tel = $('[name=tel]');
+            let $password = $('[name=password]');
+            let $span = $('#form1 span');
             $passflag = true;
             $telflag = true;
-
-            //用户名检测
-
-
-
-            //手机
             $tel.on('focus', function() {
                 $span.eq(0).html('请输入11位正确的手机号码').css('color', '#333');
             });
-
             $tel.on('blur', function() {
-                let $value = $(this).val(); //当前表单的值
+                let $value = $(this).val();
                 if ($value !== '') {
                     let $reg = /^1[3|5|8]\d{9}$/;
                     if ($reg.test($value)) {
@@ -35,9 +24,9 @@ define([], function() {
                                 tel: $tel.val()
                             }
                         }).done(function(data) {
-                            if (!data) { //不存在
+                            if (!data) {
                                 $span.eq(0).html('√').css('color', 'green');
-                            } else { //存在
+                            } else {
                                 $span.eq(0).html('该用户名已存在').css('color', 'red');
                             }
                         });
@@ -58,10 +47,10 @@ define([], function() {
 
 
             $password.on('focus', function() {
-                $span.eq(1).html('请输入1-6位字母加数字').css('color', '#333');
+                $span.eq(1).html('请输入6位以上位数字加字母').css('color', '#333');
             });
             $password.on('blur', function() {
-                let $value = $(this).val(); //当前表单的值
+                let $value = $(this).val();
                 if ($value !== '') {
                     let $reg = /^(?![0-9]+$)(?![a-zA-Z]+$)[0-9A-Za-z]{6,20}$/;
                     if ($reg.test($value)) {
@@ -76,11 +65,6 @@ define([], function() {
                     $passflag = false;
                 }
             });
-
-
-
-
-            //阻止表单的直接跳转。
             $form.on('submit', function() {
 
                 if ($tel.val() === '') {

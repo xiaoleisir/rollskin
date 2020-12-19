@@ -46,7 +46,7 @@
 }
 
 .round .active {
-    background: blue;
+    background: greenyellow;
 }
 
 .round {
@@ -63,10 +63,11 @@
     display: inline-block;
     width: 10px;
     height: 10px;
-    background: #fff;
+    background: none;
     cursor: pointer;
     border-radius: 10px;
     margin-left: 10px;
+    border: 3px solid #fff;
 }
 
 .round .current {
@@ -110,7 +111,6 @@
 
 .banner_l dl {
     color: #666;
-    margin: 0;
     list-style: none;
     width: 190px;
     height: 377px;
@@ -122,8 +122,6 @@
 .banner_l dl dd {
     color: #666;
     list-style: none;
-    margin: 0;
-    padding: 0;
     float: left;
     width: 50%;
     height: 54px;
@@ -174,8 +172,6 @@
 .banner_r dl {
     color: #666;
     visibility: visible;
-    margin: 0;
-    padding: 0;
     list-style: none;
     width: 251px;
     height: 360px;
@@ -187,7 +183,6 @@
     color: #666;
     visibility: visible;
     list-style: none;
-    padding: 0;
     float: left;
     display: inline;
     height: 119px;

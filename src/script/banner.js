@@ -9,6 +9,7 @@
     let $timer2 = null;
 
     $btnlist.on('mouseover', function() {
+        clearInterval($timer2);
         $num = $(this).index();
         $timer1 = setTimeout(function() {
             tabswitch()
@@ -45,13 +46,13 @@
     }
     $timer2 = setInterval(function() {
         $right.click();
-    }, 1000);
+    }, 3000);
 
     $lunbo.hover(function() {
         clearInterval($timer2);
     }, function() {
         $timer2 = setInterval(function() {
             $right.click();
-        }, 1000);
+        }, 3000);
     });
 }(jQuery);

@@ -1,12 +1,3 @@
-/*
-1.获取cookie - 主要是来自于详情页。
-2.渲染购物车列表。(隐藏一块布局，对隐藏的进行克隆，传值)
-3.计算总价和总的商品件数
-4.全选
-5.改变数量 - 增加减少数量 - cookie有关
-6.删除商品 - cookie有关
-*/
-
 define(['jcookie'], () => {
     return {
         init: function() {
@@ -22,7 +13,6 @@ define(['jcookie'], () => {
             }
             getcookietoarray();
 
-            // 2.渲染购物车列表(隐藏一块布局，对隐藏的进行克隆，传值)
             function rendergoods(sid, num) { //sid:商品的编号    num:商品的数量
                 $.ajax({
                     url: 'http://10.31.161.106/dashboard/rollskin/php/alldata.php',
@@ -45,9 +35,6 @@ define(['jcookie'], () => {
                 });
             }
 
-            // 3.计算总价和总的商品件数 - 单独计算，不同的地方进行调用。
-            // 核心：可视的visible  选中的
-            // each():jquery遍历元素对象   $.each():遍历数组和对象的
             function calcprice() {
                 let $sum = 0; //商品的件数
                 let $count = 0; //商品的总价
@@ -70,9 +57,6 @@ define(['jcookie'], () => {
                 calcprice(); //计算总价
             });
 
-            //获取克隆的商品列表里面的checkbox,添加事件
-            //克隆的商品列表里面：选中的复选框的长度等于存在的复选框的长度
-            // let $inputs = $('.goods-item:visible').find(':checkbox'); //查找复选框
             $('.cart-checkbox input').on('click', function() {
                 //$(this):被委托的元素，checkbox
                 if ($('.goods-item:visible').find(':checkbox').length === $('.goods-item:visible').find('input:checked').size()) {
