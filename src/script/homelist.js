@@ -3,14 +3,12 @@ ajax.open('get', 'http://10.31.161.106/dashboard/rollskin/php/taobao.php', true)
 ajax.send();
 ajax.onreadystatechange = function() {
     if (ajax.readyState === 4) {
-        // console.log(JSON.parse(ajax.responseText));
-        // console.log(ajax.responseText);
         let tabaodata = JSON.parse(ajax.responseText);
         let taobaohtml = '';
         let xUl = document.querySelector('.taobao ul');
 
 
-        for (let value of tabaodata) { //数组的值
+        for (let value of tabaodata) { 
             taobaohtml += `
                     <li>
                         <img class="lazy" data-original="${value.url}" width="200" height="200"/>

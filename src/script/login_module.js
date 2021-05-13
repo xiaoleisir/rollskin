@@ -19,7 +19,6 @@ define([], function() {
                         $password.val(''); //密码清空
                     } else { //登录成功
                         location.href = 'index.html';
-                        //存储用户名，方便首页获取。
                         localStorage.setItem('loginname', $tel.val());
                     }
                 })
