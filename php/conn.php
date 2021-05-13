@@ -7,7 +7,7 @@ define('DBNAME','render');//数据库名
 $conn = @new mysqli(HOST,USERNAME,PASSWORD,DBNAME);
 
 if($conn->connect_error){
-    die('连接数据库错误,'.$conn->connect_error);//die():退出程序并返回括号里面的值。
+    die('连接数据库错误,'.$conn->connect_error);
 }
 
 $conn->query('SET NAMES UTF8');
